@@ -4,9 +4,9 @@
        state: started
        name: glusterd
        enabled: yes
-  delegate_to: "{{ item }}"
+#  delegate_to: "{{ item }}"
   run_once: true
-  with_items: "{{ gluster_cluster_hosts }}"
+#  with_items: "{{ gluster_cluster_hosts }}"
 
 - name: Create a volume
   gluster_volume:
